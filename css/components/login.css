@@ -1,0 +1,132 @@
+/* ===================================
+   Login Screen Components
+   ================================ */
+
+.login-screen {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: #1e293b;
+    overflow: hidden;
+    position: relative;
+}
+
+.login-screen::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: #0f172a;
+    clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%);
+    opacity: 0.5;
+}
+
+.login-screen.hidden {
+    display: none;
+}
+
+.login-hero {
+    padding: 60px 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    position: relative;
+    z-index: 1;
+}
+
+.login-hero h1 {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    line-height: 1.2;
+    color: #ffffff;
+    animation: slideInLeft 0.8s ease-out;
+}
+
+.login-hero .subtitle {
+    font-size: 20px;
+    color: #cbd5e1;
+    margin-bottom: 40px;
+    line-height: 1.6;
+    animation: slideInLeft 0.8s ease-out 0.2s both;
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    animation: slideInLeft 0.8s ease-out 0.4s both;
+}
+
+.feature-item {
+    background: #334155;
+    border: 1px solid #475569;
+    border-radius: 12px;
+    padding: 20px;
+    transition: all 0.3s ease;
+}
+
+.feature-item:hover {
+    transform: translateY(-4px);
+    background: #3b4a61;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border-color: #60a5fa;
+}
+
+.feature-item .icon {
+    font-size: 32px;
+    margin-bottom: 12px;
+    display: block;
+}
+
+.feature-item h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.feature-item p {
+    font-size: 13px;
+    opacity: 0.9;
+    margin: 0;
+    line-height: 1.5;
+}
+
+.login-card-container {
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    position: relative;
+}
+
+.login-card {
+    background: white;
+    border-radius: 20px;
+    padding: 48px;
+    max-width: 420px;
+    width: 100%;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+    animation: slideInRight 0.8s ease-out;
+}
+
+.logo {
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.logo h1 {
+    color: #1e293b;
+    font-size: 28px;
+    font-weight: 700;
+    margin: 16px 0 8px;
+}
+
+.logo p {
+    color: #64748b;
+    font-size: 14px;
+}

@@ -1,0 +1,133 @@
+/* ===================================
+   AMC (Annual Maintenance Contract) Components
+   ================================ */
+
+.amc-project-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    margin-bottom: 16px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.amc-project-card:hover {
+    border-color: var(--primary);
+    box-shadow: var(--shadow-gold);
+}
+
+.amc-project-header {
+    padding: 16px 20px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--grey-dark);
+    transition: background 0.2s ease;
+    user-select: none;
+}
+
+.amc-project-header:hover {
+    background: rgba(212, 175, 55, 0.1);
+}
+
+.amc-project-info {
+    flex: 1;
+}
+
+.amc-project-name {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 4px;
+}
+
+.amc-project-details {
+    font-size: 13px;
+    color: var(--text-secondary);
+}
+
+.amc-project-stats {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.amc-stat-item {
+    text-align: center;
+}
+
+.amc-stat-value {
+    font-size: 20px;
+    font-weight: 700;
+    display: block;
+}
+
+.amc-stat-label {
+    font-size: 11px;
+    color: var(--text-secondary);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.amc-expand-icon {
+    font-size: 20px;
+    color: var(--primary);
+    transition: transform 0.3s ease;
+    margin-left: 16px;
+}
+
+.amc-project-card.expanded .amc-expand-icon {
+    transform: rotate(180deg);
+}
+
+.amc-tasks-container {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.amc-project-card.expanded .amc-tasks-container {
+    max-height: 2000px;
+}
+
+.amc-task-item {
+    padding: 16px 20px;
+    border-top: 1px solid var(--border);
+    display: grid;
+    grid-template-columns: 100px 1fr 140px 140px 120px 100px;
+    gap: 16px;
+    align-items: center;
+    transition: background 0.2s ease;
+}
+
+.amc-task-item:hover {
+    background: rgba(212, 175, 55, 0.05);
+}
+
+.amc-task-month {
+    font-weight: 600;
+    color: var(--primary);
+    font-size: 14px;
+}
+
+.amc-task-details {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.amc-task-wing {
+    color: var(--text-primary);
+    font-size: 14px;
+}
+
+.amc-task-elevators {
+    color: var(--text-secondary);
+    font-size: 12px;
+}
+
+.amc-task-date {
+    color: var(--text-secondary);
+    font-size: 13px;
+}

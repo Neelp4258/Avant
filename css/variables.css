@@ -1,0 +1,33 @@
+/* ===================================
+   CSS Custom Properties (Variables)
+   ================================ */
+
+:root {
+    /* Brand Colors */
+    --primary: #D4AF37;
+    --primary-dark: #B8960F;
+    --secondary: #6B7280;
+
+    /* Status Colors */
+    --success: #10B981;
+    --danger: #EF4444;
+    --warning: #F59E0B;
+
+    /* Neutral Colors */
+    --border: #E5E7EB;
+    --bg-light: #F3F4F6;
+    --bg-dark: #FFFFFF;
+    --bg-card: #FFFFFF;
+    --text-primary: #111827;
+    --text-secondary: #4B5563;
+    --text-tertiary: #6B7280;
+    --cream: #F5F5DC;
+    --grey-light: #F9FAFB;
+    --grey-medium: #E5E7EB;
+    --grey-dark: #D1D5DB;
+
+    /* Shadows */
+    --shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+    --shadow-gold: 0 0 20px rgba(212, 175, 55, 0.15);
+}

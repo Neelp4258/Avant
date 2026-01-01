@@ -1,0 +1,382 @@
+/* ===================================
+   Responsive Design & Media Queries
+   ================================ */
+
+/* Tablet & Below (1024px) */
+@media (max-width: 1024px) {
+    .login-screen {
+        grid-template-columns: 1fr;
+    }
+
+    .login-hero {
+        padding: 40px 32px;
+        min-height: auto;
+    }
+
+    .login-hero h1 {
+        font-size: 36px;
+    }
+
+    .login-hero .subtitle {
+        font-size: 16px;
+    }
+
+    .feature-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .login-card-container {
+        padding: 32px 20px;
+    }
+
+    .login-card {
+        padding: 32px 24px;
+    }
+}
+
+/* Mobile & Tablet (768px) */
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .charts-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .charts-grid .card {
+        height: 350px;
+    }
+
+    .login-card {
+        padding: 32px 24px;
+    }
+
+    .card {
+        padding: 16px;
+    }
+
+    .header-right {
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .user-name {
+        display: none;
+    }
+
+    .filters {
+        flex-direction: column;
+    }
+
+    .data-table {
+        font-size: 12px;
+    }
+
+    .data-table th,
+    .data-table td {
+        padding: 8px 4px !important;
+    }
+
+    /* AMC Responsive */
+    .amc-project-stats {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .amc-task-item {
+        grid-template-columns: 1fr;
+        gap: 8px;
+    }
+
+    /* Billing Responsive */
+    .billing-stats-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 12px !important;
+    }
+
+    .filters {
+        flex-direction: column !important;
+        align-items: stretch !important;
+        gap: 12px !important;
+    }
+
+    .filters input,
+    .filters select {
+        width: 100% !important;
+        min-width: auto !important;
+    }
+
+    .card-header {
+        flex-direction: column !important;
+        align-items: stretch !important;
+        gap: 16px !important;
+    }
+
+    .card-header > div {
+        display: flex;
+        gap: 8px;
+        flex-wrap: wrap;
+    }
+
+    .action-buttons {
+        flex-direction: column !important;
+        gap: 6px !important;
+    }
+
+    .action-buttons .btn {
+        width: 100%;
+        justify-content: center;
+    }
+
+    #invoiceModal .modal-dialog {
+        max-width: 95% !important;
+        margin: 10px !important;
+    }
+
+    .invoice-items-container {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .invoice-item-header {
+        min-width: 700px;
+        font-size: 12px;
+        padding: 8px;
+        gap: 8px;
+    }
+
+    .invoice-item {
+        min-width: 700px;
+        padding: 8px;
+        gap: 8px;
+    }
+
+    .invoice-item input {
+        font-size: 13px;
+        padding: 4px 6px;
+    }
+
+    .invoice-totals .form-row {
+        flex-direction: column !important;
+    }
+
+    .form-section h4 {
+        font-size: 14px;
+        margin-bottom: 12px;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr !important;
+        gap: 12px !important;
+    }
+
+    .table-responsive {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .table-responsive table {
+        min-width: 700px;
+    }
+
+    .table-responsive th,
+    .table-responsive td {
+        padding: 8px 6px;
+        font-size: 13px;
+        white-space: nowrap;
+    }
+
+    .stat-card {
+        padding: 16px !important;
+    }
+
+    .stat-value {
+        font-size: 24px !important;
+    }
+
+    .stat-label {
+        font-size: 13px !important;
+    }
+
+    /* Modal Mobile Improvements */
+    .modal {
+        padding: 10px;
+        align-items: flex-start;
+    }
+
+    .modal-dialog,
+    .modal-content {
+        max-width: 100% !important;
+        width: 100% !important;
+        margin: 0 !important;
+        max-height: 95vh !important;
+        border-radius: 8px !important;
+    }
+
+    .modal-header {
+        padding: 16px;
+    }
+
+    .modal-title {
+        font-size: 16px !important;
+    }
+
+    .modal-body {
+        padding: 16px;
+        max-height: calc(95vh - 140px);
+        overflow-y: auto;
+    }
+
+    .modal-footer {
+        padding: 12px 16px;
+        position: sticky;
+        bottom: 0;
+        background: var(--bg-card);
+        border-top: 1px solid var(--border);
+    }
+
+    .form-row {
+        grid-template-columns: 1fr !important;
+        gap: 12px;
+    }
+
+    .form-group label {
+        font-size: 14px;
+        margin-bottom: 6px;
+    }
+
+    .form-control,
+    select.form-control,
+    textarea.form-control {
+        font-size: 16px !important;
+        padding: 10px 12px !important;
+        -webkit-appearance: none;
+        appearance: none;
+    }
+
+    textarea.form-control {
+        min-height: 80px;
+    }
+
+    canvas {
+        width: 100% !important;
+        max-width: 100% !important;
+        height: auto !important;
+        min-height: 120px !important;
+        touch-action: none;
+    }
+
+    .card {
+        padding: 12px !important;
+        margin: 12px 0 !important;
+    }
+
+    .card h4 {
+        font-size: 14px !important;
+    }
+
+    .form-section {
+        padding: 12px !important;
+        margin-bottom: 16px !important;
+    }
+
+    .form-section h4 {
+        font-size: 14px !important;
+    }
+
+    .btn {
+        padding: 10px 16px;
+        font-size: 14px;
+        min-height: 44px;
+    }
+
+    .btn-sm {
+        padding: 8px 12px;
+        font-size: 13px;
+        min-height: 38px;
+    }
+
+    .rating-input {
+        font-size: 32px !important;
+        justify-content: center;
+    }
+
+    .star {
+        min-width: 44px;
+        min-height: 44px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    div[style*="grid-template-columns: repeat(2, 1fr)"] {
+        grid-template-columns: 1fr !important;
+    }
+}
+
+/* Small Mobile (640px) */
+@media (max-width: 640px) {
+    .login-hero h1 {
+        font-size: 28px;
+    }
+
+    .login-hero {
+        padding: 32px 20px;
+    }
+
+    .feature-grid {
+        gap: 16px;
+    }
+
+    .login-card {
+        padding: 24px;
+    }
+}
+
+/* Extra Small Mobile (480px) */
+@media (max-width: 480px) {
+    .billing-stats-grid {
+        grid-template-columns: 1fr !important;
+    }
+
+    .table-responsive table {
+        min-width: 600px;
+    }
+
+    .invoice-item-header,
+    .invoice-item {
+        min-width: 600px;
+        grid-template-columns: 1.5fr 60px 60px 100px 100px 60px;
+        font-size: 11px;
+    }
+
+    .card-header h3 {
+        font-size: 16px;
+    }
+
+    .modal-dialog,
+    .modal-content {
+        margin: 0 !important;
+        border-radius: 4px !important;
+    }
+
+    .modal-title {
+        font-size: 15px !important;
+    }
+
+    .modal-body {
+        padding: 12px;
+    }
+
+    .form-control,
+    select.form-control,
+    textarea.form-control {
+        font-size: 16px !important;
+    }
+}

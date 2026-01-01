@@ -1,0 +1,111 @@
+/* ===================================
+   Billing & Invoice Components
+   ================================ */
+
+.invoice-items-container {
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    overflow: hidden;
+    overflow-x: auto;
+}
+
+.invoice-item-header {
+    display: grid;
+    grid-template-columns: 2fr 80px 80px 120px 120px 80px;
+    gap: 12px;
+    padding: 12px;
+    background: var(--bg-light);
+    font-weight: 600;
+    color: var(--text-primary);
+    border-bottom: 1px solid var(--border);
+    min-width: 600px;
+}
+
+.invoice-item {
+    display: grid;
+    grid-template-columns: 2fr 80px 80px 120px 120px 80px;
+    gap: 12px;
+    padding: 12px;
+    align-items: center;
+    border-bottom: 1px solid var(--border);
+    min-width: 600px;
+}
+
+.invoice-item:last-child {
+    border-bottom: none;
+}
+
+.invoice-item input,
+.invoice-item select {
+    padding: 6px 8px;
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    font-size: 14px;
+    width: 100%;
+}
+
+.item-amount {
+    font-weight: 600;
+    color: var(--text-primary);
+    padding: 6px 8px;
+    background: var(--bg-light);
+    border-radius: 4px;
+    text-align: right;
+}
+
+.invoice-totals {
+    background: var(--bg-light);
+    padding: 20px;
+    border-radius: 6px;
+    border: 1px solid var(--border);
+}
+
+.total-display {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--text-primary);
+    padding: 8px 12px;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+}
+
+.total-amount {
+    font-size: 18px;
+    color: var(--success);
+}
+
+.billing-stats-grid .stat-card {
+    text-align: center;
+}
+
+/* Invoice Status Badges */
+.invoice-status-paid {
+    background: rgba(16, 185, 129, 0.15);
+    color: #166534;
+}
+
+.invoice-status-pending {
+    background: rgba(245, 158, 11, 0.15);
+    color: #92400e;
+}
+
+.invoice-status-overdue {
+    background: rgba(239, 68, 68, 0.15);
+    color: #991b1b;
+}
+
+.invoice-status-draft {
+    background: var(--bg-light);
+    color: #475569;
+}
+
+.invoice-status-sent {
+    background: rgba(59, 130, 246, 0.15);
+    color: #60A5FA;
+}
+
+.invoice-status-cancelled {
+    background: var(--bg-light);
+    color: #6b7280;
+}
